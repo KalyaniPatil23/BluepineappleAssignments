@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class HelloWorld{
+public class Program{
     
 	private static boolean isPalindrome(String word){
         
