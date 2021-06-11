@@ -1,9 +1,6 @@
-Write a program to count the number of digits in a given integer
-
 import java.util.*;
 
-
-public class HelloWorld {
+public class Program {
     
 	private static Scanner sc = new Scanner(System.in);
     
