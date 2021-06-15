@@ -1,11 +1,8 @@
-Write a program to print all Perfect numbers between 1 to n.
-
-code:
 import java.util.*;
 
 
 
-public class HelloWorld {
+public class Program {
     
 	private static Scanner sc = new Scanner(System.in);
     
@@ -40,7 +37,5 @@ public class HelloWorld {
 
                 }
     
-	
+      }
 }
-
-

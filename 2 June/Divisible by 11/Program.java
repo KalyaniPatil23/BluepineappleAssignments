@@ -1,9 +1,8 @@
-Number Divisible by 11
 
 import java.util.*;
 
 
-public class HelloWorld {
+public class Program {
     
 	private static Scanner sc = new Scanner(System.in);
     

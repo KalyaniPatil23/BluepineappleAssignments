@@ -1,9 +1,6 @@
-
-Find total occurrences of each digits (0-9) using function.
-
 import java.util.*; 
 
-public class HelloWorld {
+public class Program {
     
 	private static Scanner sc = new Scanner(System.in);
     
