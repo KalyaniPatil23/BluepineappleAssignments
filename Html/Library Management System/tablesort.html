@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Sorting</title>
+        <link rel="stylesheet" href="./css/tablesort.css">
+    </head>
+    <body>
+        <table id="bookTable">
+            <thead>
+              <tr>
+                <th onclick="sortTableByColumn(0)">Book_Id</th>
+                <th onclick="sortTableByColumn(1)">Book_Name</th>
+                <th onclick="sortTableByColumn(2)">Author</th>
+                <th onclick="sortTableByColumn(3)">Publication</th>
+                <th onclick="sortTableByColumn(4)">Price</th>
+                <th onclick="sortTableByColumn(5)">Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>The Secret</td>
+                <td>Rhonda Byrne</td>
+                <td>Bhupesh Publication</td>
+                <td>500.00</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>The Rise and Fall of the Black Hole Paradigm</td>
+                <td>Abhas Mitra</td>
+                <td>Parissparsh Publication</td>
+                <td>386.00</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Mein Kampf</td>
+                <td>Adolf Hilter</td>
+                <td>Aruta Publication</td>
+                <td>195.00</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Medieval India</td>
+                <td>Satish Chandra</td>
+                <td>BlueRose Publication</td>
+                <td>329.00</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <script src="./js/tablesort.js"></script>
+    </body>
+</html>

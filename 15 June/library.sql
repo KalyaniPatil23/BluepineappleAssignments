@@ -1,5 +1,5 @@
 CREATE TABLE Books(BookId int, BookName TEXT, Author TEXT, Price double, Quantity int);
-CREATE TABLE Users(UserId int, UserName TEXT, UserAddress TEXT);
+CREATE TABLE Users(UserId int, UserName TEXT, UserAddress TEXT, RegisterDate DATE, ExpireDate DATE);
 CREATE TABLE Catlog(Id int, UserId int, BookId int, IssueDate DATE, ReturnDate DATE);
 
 INSERT INTO Books VALUES

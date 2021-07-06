@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+    function myFunction() {
+        var i = document.getElementById("BookID").value;
+        console.log(i);
+    var n1 = document.getElementById("tableData").rows.length;
+    n1=n1-1;
+    var j=0;
+    var str="";
+    var n2 = document.getElementById("tableData").rows[i].cells.length;
+    console.log(document.getElementById("tableData").rows[i].innerHTML);
+    document.getElementById("tablecontent").innerHTML=document.getElementById("tableData").rows[i].innerHTML;
+
+}
+    </script>
+	<style>
+		body {
+			background-color: whitesmoke;
+			text-align: center;
+            width: 100%;
+            height: 100%;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			text-align: center;
+		}
+
+		
+		.myDiv2 {
+			border: 1px outset whitesmoke;
+			background-color: purple;
+			text-align: center;
+			margin-top: 20px;
+			margin-right: 40px;
+			margin-left: 40px;
+			margin-bottom: 40px;
+			color: white;
+		}
+        input[type="submit"] {
+  margin-top: 28px;
+  margin-right: 5px;
+  width: 100px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+
+	</style>
+</head>
+
+<body>
+
+	<div>
+        Sort Book By :
+        <input type="text" id="sortBy">
+        
+		<div class="myDiv2">
+			<h3>BOOKS TABLE</h3>
+			<table id="tableData" style="width:100%" >
+				<tr>
+					<th>BOOK_ID</th>
+					<th>BOOK_NAME</th>
+					<th>AUTHER</th>
+					<th>PRICE</th>
+					<th>QUANTITY</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>The Secret</td>
+					<td>Rhonda Byrne</td>
+					<td>500.00</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>The Rise and Fall of the Black Hole Paradigm</td>
+					<td>Abhas Mitra</td>
+					<td>386.00</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Mein Kampf</td>
+					<td>Adolf Hilter</td>
+					<td>195.00</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Medieval India</td>
+					<td>Satish Chandra</td>
+					<td>329.00</td>
+					<td>4</td>
+				</tr>
+			</table>
+            Enter Book ID :
+        <input type="text" id="BookID"/>
+        <input type="submit" value="Click Me!" onclick="myFunction()"/>
+        <table style="width:100%">
+            <tr id="tablecontent"></tr>
+        </table>
+		</div>
+	</div>
+
+</body>
+
+</html>
