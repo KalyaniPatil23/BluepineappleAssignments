@@ -5,6 +5,15 @@
         <link rel="stylesheet" href="./css/tablesort.css">
     </head>
     <body>
+      <label for="cars">Sort By :</label>
+      <select id="sort" name="Sort" onclick="sortTableByColumn(this.value)">
+        <option value="0">Book ID</option>
+        <option value="1">Book Name</option>
+        <option value="2">Author</option>
+        <option value="3">Publication</option>
+        <option value="4">Price</option>
+      </select>
+  <input type="submit">
         <table id="bookTable">
             <thead>
               <tr>
@@ -13,7 +22,6 @@
                 <th onclick="sortTableByColumn(2)">Author</th>
                 <th onclick="sortTableByColumn(3)">Publication</th>
                 <th onclick="sortTableByColumn(4)">Price</th>
-                <th onclick="sortTableByColumn(5)">Quantity</th>
               </tr>
             </thead>
             <tbody>
@@ -23,7 +31,6 @@
                 <td>Rhonda Byrne</td>
                 <td>Bhupesh Publication</td>
                 <td>500.00</td>
-                <td>5</td>
               </tr>
               <tr>
                 <td>2</td>
@@ -31,7 +38,6 @@
                 <td>Abhas Mitra</td>
                 <td>Parissparsh Publication</td>
                 <td>386.00</td>
-                <td>20</td>
               </tr>
               <tr>
                 <td>4</td>
@@ -39,7 +45,6 @@
                 <td>Adolf Hilter</td>
                 <td>Aruta Publication</td>
                 <td>195.00</td>
-                <td>3</td>
               </tr>
               <tr>
                 <td>3</td>
@@ -47,7 +52,6 @@
                 <td>Satish Chandra</td>
                 <td>BlueRose Publication</td>
                 <td>329.00</td>
-                <td>4</td>
               </tr>
             </tbody>
           </table>
